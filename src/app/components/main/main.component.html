@@ -1,0 +1,20 @@
+<section class="main p-4" style="width: 400px; margin: 0 auto">
+  <ol class="text-center">
+    <section class="d-flex align-items-center">
+      <img src="../../../assets/anular_logo.svg" alt="" width="100" />
+      <h1 class="text-center">Angular Material</h1>
+    </section>
+    <li class="mt-4">
+      <mat-form-field appearance="fill">
+        <mat-label>Cuál es tu nombre?</mat-label>
+        <input matInput [(ngModel)]="nombre" />
+      </mat-form-field>
+    </li>
+    <li>
+      <button mat-raised-button (click)="openDialog()">Abrir dialogo</button>
+    </li>
+    <li *ngIf="deporte">
+      Tu deporte favorito es: <i>{{ deporte }}</i>
+    </li>
+  </ol>
+</section>
